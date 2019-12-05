@@ -1,0 +1,61 @@
+body, p {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+p.header {
+    color: pink;
+    font-weight: bold;
+}
+
+.header {
+    background-color: black;
+    text-align: center;
+    padding: 30px;
+    margin: ;
+}
+
+#content {
+    background-color: aliceblue;
+    padding: 0 20%;
+    
+}
+
+#footer {
+    background-color: darkslategrey;
+    
+}
+
+p.title {
+    color: black;
+    font-weight: bold;
+    margin-top: 10px;   
+}
+
+p.add {
+    color: black;
+    margin: 10px 0;   
+}
+
+textarea {
+  resize: none;
+    margin-bottom: 10px;
+    width: 800px;
+    padding: 5px;
+}
+
+#post1, #post2 {
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    margin-bottom: 10px;
+    text-overflow: clip;
+    padding: 5px;
+}
+
+.posts {
+    border-style: solid;
+    border-width: 1px;
+}
+

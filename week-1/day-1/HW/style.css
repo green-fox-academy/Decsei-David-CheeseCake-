@@ -1,0 +1,64 @@
+@font-face {
+    font-family: consolas;
+    src: url(https://freefontsdownload.net/find.php?q=CONSOLA.TTF);
+}
+
+body {
+    background-color: white;
+    background-image: url(assets/background.png);
+    font-family: consolas;
+    padding: 0px 10%;
+}
+
+#header {
+    background-color: #333333;
+    width: 100%; 
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin: 0px; 
+    padding: 20px 0px;
+}
+
+.menu {
+    float: right;
+    padding-right: 10%;
+}
+
+a {
+    color: #ff0099;
+}
+
+.icon {
+     float: left;
+    padding-left: 10%;
+}
+
+h1 {
+    padding: inherit;
+    margin-top: 150px;
+    font-size: 72px;
+}
+
+h2 {
+    color: #ff0099;
+    padding: inherit;
+}
+
+.definitions {
+    color: black;
+}
+
+a {
+    padding-left: 20px;
+}
+
+p {
+    padding: inherit;
+    text-align: justify;
+}
+
+.divide {
+    padding: inherit;
+    text-align: center;
+}

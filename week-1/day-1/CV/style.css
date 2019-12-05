@@ -1,0 +1,42 @@
+
+@font-face {
+  font-family: Anakin;
+  src: url(anakinmono.ttf);
+}
+
+body {
+    padding: 5% 5%;
+    background-image: url(assets/background.jpg);
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+p, h1, h2, h3, q, blockquote, nav, img, ul, li {
+    font-family: Anakin;
+    color: antiquewhite;
+    text-align: justify;
+}
+
+q {
+    float: right;
+    font-style: italic;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+h2 {
+    padding-top: 10%;
+    padding-bottom: 0px;
+}
+
+h1 {
+    color: red;
+    font-size: 36;
+}
+
+#content {
+    position: relative;
+    width: 430px;
+}
+
+
