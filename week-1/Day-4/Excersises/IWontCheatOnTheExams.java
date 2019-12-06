@@ -4,11 +4,10 @@ package Excersises;
 
 public class IWontCheatOnTheExams {
     public static void main(String[] args) {
-        int i = 0;
-        int a = 0;
 
-        for (i = 0; a == 100; a++) {
-        System.out.println("I won't cheat on the exam! ");
+        for (int i = 0; i <= 100; i++) {
+        System.out.println(i + " I won't cheat on the exam! \n");
         }
+
     }
 }
