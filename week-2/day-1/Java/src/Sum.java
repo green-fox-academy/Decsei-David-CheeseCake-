@@ -18,8 +18,6 @@ public class Sum {
         int b = 0;
         for (int i = 1; i <= a; i++) {
             b = b + i;
-
-
         }
         return b;
     }
