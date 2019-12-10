@@ -47,6 +47,8 @@ grades.remove(#) = # számú index érték törlése
 
 #.removeRange(i,j) = # ArrayListben i és j index törlése.
 
+#.remove(Integer.valueOf(#) = # ArrayListben (#) tartalmat töröl.
+
 #.addAll(#2) = # ArrayList adatainak átmásolása #2 ArrayList-be.
 
 #.contains(#) = Megnézi, hogy # ArrayList tartalmazza e az (#) elemet. Ha igen, akkor TRUE értéket ad vissza.
@@ -61,3 +63,5 @@ grades.remove(#) = # számú index érték törlése
 
 ArrayList tartalmának másolása Arraybe:
     #Array = #ArrayList.toArray();
+
+#.toString() = Stringé alakítja az ArrayListet
