@@ -1,0 +1,63 @@
+Collections = több kis elemnek a csoportosítása. Mérete változhat.
+
+ArrayList<type> # = new ArrayList<>() = A collections egy fajtája. Mérete változhat. 
+(Ellenben pl egy előre inicializált arrayez képest.)
+(Nem használhat primitív type-ot, azaz int,char,double stb)
+        
+          Primitive Data Type 	  Wrapper Class
+               byte 	             Byte
+               short 	             Short
+               int 	                 Integer
+               long 	             Long
+               float 	             Float
+               double 	             Double
+               boolean 	             Boolean
+               char 	             Character
+
+grades.add(n) = n elem hozzáadása az ArrayListben a soron következő indexhez. (0-tól kezdődik)
+
+grades.add(i, n) = n elem hozzáadása az ArrayList i indexéhez.
+
+#.set(i, "") = # ArrayListben az i indexű érték módosítása ""-re.
+
+grades.size() = adott ArrayList méretének lehívása.
+(Mint egy #.length)
+
+grades.get(#) = adott ArrayList #. elemének lehívása.
+pl egy for loop esetén: 
+// A továbbiakban System.out.println = "sout"... //
+
+for(int i=0; i<grades.size(); i++) {   // Ezt ismerjük
+sout("Grade #%d == %d\n", i, grades.get(i);
+
+Azaz részekben:
+
+// A "" között lévő rész csak szöveg illetve formázás.//
+....#...  -> semmi különös. egy "#" a szövegben.
+...%d...  -> megjelenítendő szám decimális formázása
+...==...  -> semmi különös. egy "==" a szövegben.
+..%d\n..  -> ugyan az, mint a %d csak új sorral a végén (\n)
+
+...,i,.. - > i számú index megtalálása
+grades.get(i) -> i számú index értékének kiírása
+
+grades.remove(#) = # számú index érték törlése
+(Nem "NULL" lesz hanem megszűnik létezni.)
+(A maradék elemek indexe újra rendeződik)
+
+#.removeRange(i,j) = # ArrayListben i és j index törlése.
+
+#.addAll(#2) = # ArrayList adatainak átmásolása #2 ArrayList-be.
+
+#.contains(#) = Megnézi, hogy # ArrayList tartalmazza e az (#) elemet. Ha igen, akkor TRUE értéket ad vissza.
+(hasznos pls if loopnál.)
+
+#.containAll(#) = Megnézi, hogy # ArrayList tartalmazza e az (#)ArrayList összes elemét. Ha igen, akkor TRUE értéket ad vissza.
+(hasznos pls if loopnál.)
+
+#.clear() = Törli az #ArrayList teljes tartalmát
+
+#.isEmpty() = Ellenőrzi, hogy #ArrayList teljesen üres e. Ha igen, akkor az értéke TRUE.
+
+ArrayList tartalmának másolása Arraybe:
+    #Array = #ArrayList.toArray();

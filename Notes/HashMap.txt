@@ -1,0 +1,26 @@
+HashMap = Egy tábla, ami egy Arrayhez hasonlóan index alatti adatokat tárol, DE!
+    - nem index, hanem "key"
+    - a key lehet String is
+
+Létrehozása
+    HashMap<Type,Type> #név = new HashMap<Type,Type>();
+
+#.put("key", "érték, érték") = # nevű HashMapben a "key" key adatának módosítása "érték, érték"-re.
+(Ha már volt ott érték, akkor felül íródik)
+
+Minden elem egyenkénti kiírása:
+    for (String key: #.keySet()){
+        sout(key + " : " +#.get(key));
+    }
+
+Azaz:
+    for (String key: #.keySet()){   -> Sorban haladva minden létező #HashMap key értékének megadása a "key" String változónak (egyenként), míg el nem fogynak.
+    sout(key + " : " +#.get(key));  -> Kiírja a "key" változó aktuális értékét (#HashMap soron lévő key értéke) 
+majd a #.get(key) paranccsal az adott key-hez tartozó érték kiírása.
+
+#.containsKey("") = #HashMap tartalmazza e a "" key-t.
+Ha igen, az érték TRUE.
+
+#.containsValue("") = #HashMap tartalmazza e a "" értéket (a key alatt tárolt érték).
+Ha igen, az érték TRUE.
+

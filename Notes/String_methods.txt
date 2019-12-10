@@ -1,0 +1,49 @@
+#.startsWith(#) = ellenőrzi, hogy # változó tartalma (#)-val kezdődik e. (kis és nagy betű számít)
+
+#.endsWith(#) = ellenőrzi, hogy # változó tartalma (#)-val végződik e. (kis és nagy betű számít)
+
+#.equalsIgnoreCase(#) = ellenőrzi, hogy # és (#) azonos tartalmak e, a kis és nagy betűk figyelmen kívül hagyásával.
+
+#.equals(#) = ellenőrzi, hogy # és (#) azonos tartalmak e. (kis és nagy betű számít)
+
+#.concat(#) = egymás után fűz 2 stringet.
+(ugyan az, mint a System.out.print(# + #))
+
+#.charAt(n) = adott stringben az n. betűt írja ki.
+(0-tól kezdődik a számolás azaz: 0 1 2 3 )
+                                 W o r d
+
+#.indexOf('betű') = adott stringben a megadott betű indexét írja ki, azaz, hogy hányadik betű. 
+(Ha több betű van abból, amit keresünk, akkor csak a legelső indexét írja majd ki)
+(Betű kapcsolatot is kereshetünk vele pl.: "dr", de ez esetben ""-t kell használnunk.)
+(0-tól kezdődik a számolás azaz: 0 1 2 3 )
+                                 W o r d
+
+#.indexOf('betű', n) = adott stringben a megadott betű indexét írja ki, azaz, hogy hányadik betű, de csak az n. indextől kezdve a keresést. 
+(Ha az n. index alatt a keresett betű van, akkor önmagát írja ki.)
+(részletet is kereshetünk vele pl.: "dr", de ez esetben ""-t kell használnunk.)
+(Ha több betű van abból, amit keresünk, akkor csak a legelső indexét írja majd ki)
+(0-tól kezdődik a számolás azaz: 0 1 2 3 )
+                                 W o r d
+
+#.substring(n) = adott stringből másolja ki az n. indextől kezdve a tartalmat.
+(0-tól kezdődik a számolás azaz: 0 1 2 3 )
+                                 W o r d
+
+#.substring(n, n) = adott stringből másolja ki az n. indextől kezdve a tartalmat az n. indexig.
+(0-tól kezdődik a számolás azaz: 0 1 2 3 )
+                                 W o r d
+
+#.replace('betű1', 'betű2') = az adott stringben előforduló összes betű1-t lecseréli betű2-re.
+(részletet is kereshetünk vele pl.: "dr", de ez esetben ""-t kell használnunk.)
+
+#.trim() = az adott stringből levágja az üres részeket
+
+
+
+
+
+
+
+
+
