@@ -1,0 +1,54 @@
+File memória kímélő beolvasása:
+
+Teljes példa:
+    LineIterator # = FileUtils.lineIterator(#, "UTF-8");
+        try {
+            while (#.hasNext()) {
+                String # = #.nextLine();
+        
+                    // do something with line
+
+            }
+        } finally {
+            LineIterator.closeQuietly(it);
+          }
+
+Declarálása és inicializáció:
+    LineIterator # = FileUtils.lineIterator(#, "UTF-8");
+Ahol: 
+    -LineIterator # => # nevű változó LineIterator típus
+    -FileUtils.lineIterator => File-hoz tartozó funkciók meghívása, azon belül a lineIterator kezelő meghívása
+    -(#, "UTF-8") => # nevű változó megadása, ami a fájlra mutat (path) és "UTF-8"-as kódolás megadása.
+
+Try teszt írása:
+        try {
+            while (#.hasNext()) {
+                String # = #.nextLine();
+        
+                    // do something with line
+
+            }
+        } finally {
+            LineIterator.closeQuietly(#);
+          }
+
+Ahol:
+    - while(#.hasNext()) => # nevű Scanner funkció futtatása, amíg van következő sor, amit beolvasson.
+    - String # = #.nextLine(); => # String változó tartalma legyen egyenlő # fájl következő sorával.
+    - LineIterator.closeQuietly(#); => Iterátor lezárása és a foglalt memória terület felszabadítása.
+
+(Iteráció: Tartalalmak darabonkénti kinyerése halmazokból, jelen esetünkben egy fájl beolvasása soronként, hogy ne foglaljon hatalmas memóriát.)
+------------------------------------------------------------------------------
+
+Fájl átnevezése és mozgatása Commons IO-val
+
+FileUtils.moveFileToDirectory(
+      FileUtils.getFile(".../.../.../#"), 
+      FileUtils.getFile(".../.../../#"), true);
+
+Ahol:
+    - FileUtils.getFile(".../.../.../#") => # file-ra hivatkozás/kijelölés az "../.." elérési útvonalon. (a programot futtató mappától nézve)
+    - FileUtils.getFile(".../.../../#"), true); => a célmappa megadása és a fájl esetleges átnevezése.
+
+
+

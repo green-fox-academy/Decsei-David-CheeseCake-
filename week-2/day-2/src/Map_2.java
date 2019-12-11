@@ -13,7 +13,7 @@ public class Map_2 {
         }
 
         Map.remove("978-1-60309-444-3");
-        Map.remove("", "The Lab");
+        Map.remove("*", "The Lab");
 
         Map.put("978-1-60309-450-4", "They Called Us Enemy");
         Map.put("978-1-60309-453-5", "Why Did We Trust Him?");
@@ -25,6 +25,7 @@ public class Map_2 {
         }
 
         System.out.println(Map.get("978-1-60309-453-5"));
+        System.out.println(Map);
 
     }
 
