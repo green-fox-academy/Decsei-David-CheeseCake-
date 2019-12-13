@@ -16,9 +16,6 @@ import java.util.Scanner;
 public class DrawChessTable {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-        int case_a = 0;
-        int case_b = 0;
-
         System.out.print("Enter number : ");
         int row = scan.nextInt();
 
