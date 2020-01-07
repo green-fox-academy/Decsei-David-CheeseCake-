@@ -1,0 +1,68 @@
+
+    What is a package?
+
+Like a folder which contains the java classes.
+
+    Why are we using packages?
+
+Except to organize our program we can use them to modify the accesibility or add restriction to our codes.
+
+    What is inheritance?
+
+When we have a sub-class with a parent-class which contains the same or some of the parent-class properties.
+
+    What is a base class?
+
+The main class which properties can be inherited by 'it-is' subclasses.
+
+    What is a derived class?
+
+The main class where we make us of the arguments declared in the other classes.
+
+    What's the difference between the is-a and has-a relationship?
+
+A person (class)has properties (like age,name) and a person can be a soldier who has his own properties (like gun) but because its a person it has the person properties to by inheritance.
+So a soldier is-a person but a person has-a soldier.
+
+    Why is inheritance useful?
+
+You dont have to write down everything multiple times if you want to expand or modify/specify a class.
+
+    What is the usage of the super keyword?
+
+It calls the parent-class properties and methods when used from a sub-class.
+
+    What are the access modifiers?
+
+Restricts the program/user to acces the key/main informations inside our program.
+
+    What is polymorphism?
+
+Its when we have a parent-class with a sub-class and we creat a sub-class object with using the parent-class.
+like we have Animal as a parent and Cat as a sub and we say " Animal Pig = new Cat(); ".
+But this way our Pig cant acces the methods of Cat class unless we cast it as a Cat with " (Cat)Pig " since its an Animal class object.
+
+    When do you need to use the @Override annotation?
+
+When you want to ovveride methods which was declared before.
+
+    What is the difference between overriding and overloading?
+
+Overriding is when you declare the same method in a sub-class which is already declared in the parent-class.
+Overloading is when you declare the same method in the same class where you already made the same previously.
+
+    How to safely cast a variable from one type to another?
+ 
+Make a temporary variable to store the casted variable like " tempvariable #nameOfIt = (tempvariable)OriginalVariableName (or value)
+
+    What is the difference between implicit and explicit casting?
+
+Implicit means widening the storage needed to hold the variable or its capability with casting (like char > String)
+Explicit means the opposite of it (like String > char)
+
+    What is the usage of the final keyword?
+
+Depends on where it is used.
+For variables it means that variable cant be modified anymore.
+For methods it means that its cant be override/shadowed
+For classes it means that its properties cant be inherited.
