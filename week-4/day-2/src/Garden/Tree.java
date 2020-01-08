@@ -6,6 +6,6 @@ public class Tree extends Plant {
     super(water, color);
     super.neededWater = 10;
     super.type = "Tree";
-    super.absorbRatio = (float) 0.75;
+    super.absorbRatio = (float) 0.40;
   }
 }

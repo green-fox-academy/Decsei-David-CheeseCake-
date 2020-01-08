@@ -14,8 +14,9 @@ public class Simulate {
     test.addPlant(purple);
     Tree orange = new Tree("orange", 1);
     test.addPlant(orange);
+    System.out.println(purple.getClass().getSimpleName());
 
-    for (Plant p : test.Plants) {
+  /*  for (Plant p : test.Plants) {
       p.needsWater();
       p.isNeed();
     }
@@ -36,5 +37,7 @@ public class Simulate {
     System.out.println();
   }
 
+*/
 
+  }
 }

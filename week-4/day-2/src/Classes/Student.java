@@ -1,6 +1,6 @@
 package Classes;
 
-public class Student extends Person {
+public class Student extends Person implements Cloneable{
 
   protected String previousOrganization;
   protected int skippedDays = 0;
@@ -28,4 +28,5 @@ public class Student extends Person {
   public void skipDays(int numberOfDays) {
     this.skippedDays = this.skippedDays + numberOfDays;
   }
+
 }

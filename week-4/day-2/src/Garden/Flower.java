@@ -6,5 +6,6 @@ public class Flower extends Plant {
     super(water, color);
     super.neededWater = 5;
     super.type = "Flower";
+    super.absorbRatio = (float) 0.75;
   }
 }
