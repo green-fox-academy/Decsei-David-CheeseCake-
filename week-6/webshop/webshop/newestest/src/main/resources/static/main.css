@@ -1,0 +1,137 @@
+body {
+  background-color: lightgray;
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo and main menu on index */
+#mainLogoOnIndex, .logo {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  animation: logoAppearing 5s;
+  color: black;
+}
+
+#indexMenu {
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: logoAppearing 7s;
+  color: black;
+  text-align: center;
+}
+
+#footer, .footerText {
+  position: absolute;
+  top: 95%;
+  height: 5%;
+  width: 100%;
+
+  background-color: black;
+  color: white;
+
+  text-align: center;
+}
+
+@keyframes logoAppearing {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*end of index logo and menu part */
+
+/*webshop header with search field and changing pictures*/
+
+#header {
+  background-color: black;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 0;
+}
+
+h1.text {
+  color: white;
+  display: inline;
+  position: relative;
+  top: 10px;
+}
+
+form.searhFormInHeader {
+  display: inline;
+  float: right;
+  padding: 10px;
+  margin: 0;
+}
+
+input[type=text] {
+  width: 400px;
+  height: 30px;
+  padding: 3px;
+  border-radius: 10px;
+}
+
+button[type=submit] {
+  height: 40px;
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  position: relative;
+  top: 4px;
+}
+
+#bigPictures {
+  background-image: url("pics/bg.jpg");
+  position: relative;
+  top: 32px;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0;
+  margin: 0;
+  animation: bigPicturesChanging 10s infinite;
+}
+
+@keyframes bigPicturesChanging {
+  from {
+  }
+  to {
+    animation: ease-out;
+    background-image: url("pics/bg2.jpg");
+  }
+}
+
+/*end of webshop header with search field */
+
+/*main table with data from controller*/
+
+table {
+  width: 800px;
+}
+
+table.centerMenu {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2%;
+  background-color: black;
+  height: 100px;
+}
+
+span.mainMenu {
+  margin-left: 30px;
+  color: white;
+}
+
+.centerItems {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}

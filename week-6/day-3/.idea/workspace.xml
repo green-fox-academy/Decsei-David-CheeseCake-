@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="07eb980b-7c4c-410a-8a09-d7c60b60816e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Exam test/src/RemoveSwears.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Exam test/src/RemoveSwears.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1Wkz6ExfvE66Wlgtq67v7X76sHQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="show.unlinked.gradle.project.popup" value="true" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="07eb980b-7c4c-410a-8a09-d7c60b60816e" name="Default Changelist" comment="" />
+      <created>1579708210469</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579708210469</updated>
+      <workItem from="1579708230311" duration="239000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="466" y="113" key="FileChooserDialogImpl" timestamp="1579708474323">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="466" y="113" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1579708474323" />
+    <state x="69" y="74" key="new project wizard" timestamp="1579708475792">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="69" y="74" key="new project wizard/0.0.1366.738@0.0.1366.738" timestamp="1579708475792" />
+  </component>
+</project>

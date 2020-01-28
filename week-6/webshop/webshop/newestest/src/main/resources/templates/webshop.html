@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Webshop</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+
+<div id="header">
+
+  <h1 class="text"><a href="/webhsop"> My Bestest Shop </a></h1>
+
+  <form action="/search" method="post" class="searhFormInHeader">
+    <input type="text" id="search" name="search" placeholder="Search...">
+    <button type="submit"><img src="pics/search.png" width="20" height="20"></button>
+  </form>
+
+</div>
+
+<a href="/more-filters"> More filters </a>
+
+<div id="bigPictures"></div>
+
+<table class="centerMenu">
+  <tr>
+    <td>
+      <span class="mainMenu"> <a href="/only-available"> Only available </a> </span>
+    </td>
+    <td>
+      <span class="mainMenu"> <a href="/cheapest-first"> Cheapest first </a> </span>
+    </td>
+    <td>
+      <span class="mainMenu"> <a href="/most-expensive"> Most expensive</a> </span>
+    </td>
+    <td>
+      <span class="mainMenu"> <a href="/averageStock"> Average stock</a> </span>
+    </td>
+  </tr>
+</table> <!-- main menu -->
+
+
+<table class="centerItems">
+  <tr>
+    <td>
+     Name
+    </td>
+    <td>
+      Description
+    </td>
+    <td>
+      <a href="/priceFiltered"> Price </a>
+    </td>
+    <td>
+      Quantity
+    </td>
+    <td>
+      <a href="/typeFiltered"> Type </a>
+    </td>
+  </tr> <!-- stock header (name, desc stc. -->
+
+  <tr th:each="Item : ${itemList}">
+    <td th:text="${Item.name}">
+    <td th:text="${Item.description}">
+    <td th:text="${Item.price} + ' Ft'">
+    <td th:text="${Item.stock}">
+    <td th:text="${Item.type}">
+  </tr> <!-- live data from model -->
+</table>
+</body>
+</html>
