@@ -43,7 +43,7 @@ public class WebshopController {
   @GetMapping(value = "/cheapest-first")
   public String returnCheapestFirst(Model model) {
     model.addAttribute("itemList",
-        itemList.stream().sorted((item1, item2) -> item1.getPrice().compareTo(item2.getPrice()))
+        itemList.stream().sorted(Comparator.comparing(Item::getPrice))
             .collect(Collectors.toList()));
     return "webshop";
   }

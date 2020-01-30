@@ -2,30 +2,45 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
-  <title>Wesbhop</title>
+  <title>Webshop</title>
   <link rel="stylesheet" href="main.css" type="text/css">
 </head>
 <body>
-<table>
+
+<div id="header">
+  <h1 class="text"><a href="/webhsop"> My Bestest Shop </a></h1>
+
+  <form action="/search" method="post" class="searhFormInHeader">
+    <input type="text" id="search" name="search" placeholder="Search...">
+    <button type="submit"><img src="pics/search.png" width="20" height="20"></button>
+  </form>
+</div>
+
+<a href="/more-filters"> More filters </a>
+
+<table class="centerMenu">
   <tr>
     <td>
-      <a href="/only-available"> Only available </a>
+      <span class="mainMenu"> <a href="/only-available"> Only available </a> </span>
     </td>
     <td>
-      <a href="/cheapest-first"> Cheapest first </a>
+      <span class="mainMenu"> <a href="/cheapest-first"> Cheapest first </a> </span>
     </td>
     <td>
-      menu3
+      <span class="mainMenu"> <a href="/most-expensive"> Most expensive</a> </span>
     </td>
     <td>
-      menu4
+      <span class="mainMenu"> <a href="/averageStock"> Average stock</a> </span>
     </td>
   </tr>
 </table> <!-- main menu -->
-<table>
-  <tr>
-    <td th:text="'Average stock: ' + ${#numbers.formatDecimal(average, 0, 'COMMA', 2, 'POINT')}"></td>
-  </tr>
+
+  <table class="centerItems">
+    <tr>
+      <td th:text="'Average stock: ' + ${#numbers.formatDecimal(average, 0, 'COMMA', 2, 'POINT')}"></td>
+    </tr>
+</table>
 </table>
 </body>
 </html>
+

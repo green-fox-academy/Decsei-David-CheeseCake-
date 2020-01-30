@@ -4,16 +4,12 @@ body {
   margin: 0;
 }
 
-/* Logo and main menu on index */
-#mainLogoOnIndex, .logo {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  animation: logoAppearing 5s;
-  color: black;
+a {
+  text-decoration: none;
+  color: gray;
 }
 
+/* Logo and main menu on index */
 #indexMenu {
   width: 230px;
   margin-left: auto;
@@ -85,29 +81,6 @@ button[type=submit] {
   position: relative;
   top: 4px;
 }
-
-#bigPictures {
-  background-image: url("pics/bg.jpg");
-  position: relative;
-  top: 32px;
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 0;
-  margin: 0;
-  animation: bigPicturesChanging 10s infinite;
-}
-
-@keyframes bigPicturesChanging {
-  from {
-  }
-  to {
-    animation: ease-out;
-    background-image: url("pics/bg2.jpg");
-  }
-}
-
 /*end of webshop header with search field */
 
 /*main table with data from controller*/
@@ -117,12 +90,11 @@ table {
 }
 
 table.centerMenu {
-  position: relative;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 2%;
+  margin-top: 5%;
   background-color: black;
-  height: 100px;
+  height: 50px;
 }
 
 span.mainMenu {
