@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Landing page</title>
+</head>
+<body>
+
+<img src="images/greenfox.png">
+
+<!-- This list lists the tricks -->
+<h2> Known tricks: </h2>
+<ul>
+  <li th:each="trick : *{foxFromList.getTricks()}" th:text="${trick}"></li>
+</ul>
+<!-- End of the trick list -->
+
+<!-- Here you can add new tricks to the list -->
+<form method="post" action="/add_new_trick">
+  <p> Add new trick: </p>
+  <input type="text" name="trick" placeholder="Add new trick...">
+  <input type="hidden" name="name" th:value="${foxFromList.name}">
+  <button type="submit"> Add new trick</button>
+</form>
+<!-- End of the adding new trick -->
+
+<!-- in here you can delete existing tricks -->
+<form action="/remove_trick" method="post">
+  <p>Delete tricks: </p>
+  <select name="trick">
+    <option th:each="trick : *{foxFromList.getTricks()}" th:value="${trick}"
+            th:text="${trick}"></option>
+  </select>
+  <input type="hidden" name="name" th:value="${foxFromList.name}">
+  <button type="submit"> Remove trick</button>
+</form>
+<br>
+<!-- End of the modifying the trick list -->
+
+<!-- This form is for nutritionStore to modify food and drink -->
+<form method="post" action="/nutritionStore">
+  <table>
+    <tr>
+      <td> Food:</td>
+      <td th:text="${foxFromList.food}"></td>
+      <td><input name="food" type="text" th:placeholder="${foxFromList.food}"></td>
+    </tr>
+    <tr>
+      <td> Drink:</td>
+      <td th:text="${foxFromList.drink}"></td>
+      <td><input name="drink" type="text" th:placeholder="${foxFromList.drink}"></td>
+    </tr>
+    <tr>
+      <input type="hidden" name="name" th:value="${foxFromList.name}">
+      <td>
+        <button type="submit"> Change it</button>
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- nutritionStore ends -->
+
+<!-- There is the action history -->
+<table>
+  <tr th:each="line : ${actionHistory}" >
+    <td th:text="${line}"></td>
+  </tr>
+</table>
+<!-- End of the action history -->
+
+</body>
+</html>

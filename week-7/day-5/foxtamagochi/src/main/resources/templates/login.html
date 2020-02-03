@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https:\\www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Login screen</title>
+</head>
+<body>
+
+<h1>Whalecum to Programmer GreenFox Club!</h1>
+
+<p> Please provide a name, so you can find your pet or create a new one! </p>
+
+<form th:method="POST" th:action="@{/login}">
+  <fieldset>
+    <legend> Lets get your pet, mate!</legend>
+    <span> Name: </span>
+    <input name="name" id="name" type="text" placeholder="Insert the name of your pet...">
+    <button type="submit"> GIVE ME MY PET!</button>
+  </fieldset>
+  </form>
+
+</body>
+</html>

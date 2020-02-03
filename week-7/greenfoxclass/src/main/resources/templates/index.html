@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+<table>
+  <tr th:each="student : ${students}">
+    <td th:text="${student}">
+    </td>
+  </tr>
+</table>
+
+<form action="/gfa/add" method="post">
+  <input type="text" name="name" >
+ <button type="submit" name="name"> Add Student  </button>
+</form>
+
+</body>
+</html>
