@@ -8,6 +8,8 @@ import com.example.week9day1.Domain.Greeter;
 import com.example.week9day1.Domain.JsonUntil;
 import com.example.week9day1.Domain.Log;
 import com.example.week9day1.Domain.NumberToDouble;
+import com.example.week9day1.Domain.Sith;
+import com.example.week9day1.Domain.Yoda;
 import com.example.week9day1.Repository.MainRepoInt;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -96,5 +98,12 @@ public class MainController {
   @ResponseBody
   public Iterable<Log> listLog() {
     return mainRepoInt.findAll();
+  }
+
+  @PostMapping(value = "/sith")
+  @ResponseBody
+  public ResponseEntity<Yoda> sith(@RequestBody Sith input) {
+    Yoda yoda = new Yoda(input);
+    return new ResponseEntity<>(yoda, HttpStatus.OK);
   }
 }
