@@ -1,6 +1,7 @@
 package com.example.week9day1.Domain;
 
 public class JsonUntil {
+
   private Integer until;
 
   public JsonUntil() {

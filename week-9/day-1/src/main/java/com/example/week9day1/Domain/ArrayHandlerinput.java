@@ -1,6 +1,9 @@
 package com.example.week9day1.Domain;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public class ArrayHandlerinput {
+
   private String what;
   private Integer[] numbers;
 
@@ -31,5 +34,11 @@ public class ArrayHandlerinput {
 
   public void setNumbers(Integer[] numbers) {
     this.numbers = numbers;
+  }
+
+  @JsonValue
+  @Override
+  public String toString() {
+    return super.toString();
   }
 }

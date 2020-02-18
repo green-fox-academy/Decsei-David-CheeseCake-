@@ -17,14 +17,14 @@ public class ArrayHandlerCalc {
   public ArrayHandlerCalc(String what, Integer[] numbers) {
     result = new ArrayList<>();
 
-    if (what == null || what.isEmpty() || (numbers == null )) {
+    if (what == null || what.isEmpty() || (numbers == null)) {
       this.error = "Please provide what to do with the numbers! (Or the numbers!)";
     } else if (what.equals("multiply")) {
       result.add(Arrays.stream(numbers).reduce(1, (a, b) -> a * b));
     } else if (what.equals("sum")) {
       result.add(Arrays.stream(numbers).reduce(0, Integer::sum));
     } else if (what.equals("double")) {
-      result = (Arrays.stream(numbers).map(i -> i*2).collect(Collectors.toList()));
+      result = (Arrays.stream(numbers).map(i -> i * 2).collect(Collectors.toList()));
     }
   }
 

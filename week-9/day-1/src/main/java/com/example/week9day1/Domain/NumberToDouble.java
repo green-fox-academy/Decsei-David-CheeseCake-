@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 
 public class NumberToDouble {
+
   @JsonInclude(Include.NON_NULL)
   private Integer received;
   @JsonInclude(Include.NON_NULL)
@@ -19,7 +20,6 @@ public class NumberToDouble {
       this.error = "Please provide an input!";
     }
   }
-
 
   public Integer getReceived() {
     return received;
