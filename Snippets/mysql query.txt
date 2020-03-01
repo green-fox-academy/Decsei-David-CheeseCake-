@@ -1,0 +1,105 @@
+select database from cli
+
+	shell> mysql your-database-name
+
+create table "név" ( oszlopok neve tulajdonságai vesszővel elválasztva),
+		   (elem értékei a megadott sorrendben)
+
+	CREATE TABLE shop (
+    		article INT UNSIGNED  DEFAULT '0000' NOT NULL,
+    		dealer  CHAR(20)      DEFAULT ''     NOT NULL,
+    		price   DECIMAL(16,2) DEFAULT '0.00' NOT NULL,
+    		PRIMARY KEY(article, dealer));
+		INSERT INTO shop VALUES
+    	(1,'A',3.45),(1,'B',3.99),(2,'A',10.99),(3,'B',1.45),
+    	(3,'C',1.69),(3,'D',1.25),(4,'D',19.95);
+
+select elements and order by data from table
+
+	SELECT * FROM shop ORDER BY article;
+	+---------+--------+-------+
+	| article | dealer | price |
+	+---------+--------+-------+
+	|       1 | A      |  3.45 |
+	|       1 | B      |  3.99 |
+	|       2 | A      | 10.99 |
+	|       3 | B      |  1.45 |
+	|       3 | C      |  1.69 |
+	|       3 | D      |  1.25 |
+	|       4 | D      | 19.95 |
+	+---------+--------+-------+
+
+Maximum value from selected column
+
+	SELECT MAX(article) AS article FROM shop;
+	+---------+
+	| article |
+	+---------+
+	|       4 |
+	+---------+
+
+The Row Holding the Maximum of a Certain Column
+
+	SELECT article, dealer, price
+	FROM   shop
+	WHERE  price=(SELECT MAX(price) FROM shop);
+	+---------+--------+-------+
+	| article | dealer | price |
+	+---------+--------+-------+
+	|    0004 | D      | 19.95 |
+	+---------+--------+-------+
+
+The same but with joining the tables, oder by and show only the first row
+
+	SELECT s1.article, s1.dealer, s1.price
+	FROM shop s1
+	LEFT JOIN shop s2 ON s1.price < s2.price
+	WHERE s2.article IS NULL;
+	SELECT article, dealer, price
+	FROM shop
+	ORDER BY price DESC
+	LIMIT 1;
+
+Maximum of Column per Group
+
+	SELECT article, MAX(price) AS price
+	FROM   shop
+	GROUP BY article
+	ORDER BY article;
+	+---------+-------+
+	| article | price |
+	+---------+-------+
+	|    0001 |  3.99 |
+	|    0002 | 10.99 |
+	|    0003 |  1.69 |
+	|    0004 | 19.95 |
+	+---------+-------+
+
+The Rows Holding the Group-wise Maximum of a Certain Column
+
+	SELECT article, dealer, price
+	FROM   shop s1
+	WHERE  price=(SELECT MAX(s2.price)
+              FROM shop s2
+              WHERE s1.article = s2.article)
+	ORDER BY article;
+	+---------+--------+-------+
+	| article | dealer | price |
+	+---------+--------+-------+
+	|    0001 | B      |  3.99 |
+	|    0002 | A      | 10.99 |
+	|    0003 | C      |  1.69 |
+	|    0004 | D      | 19.95 |
+	+---------+--------+-------+
+
+Searching on Two Keys
+
+	SELECT field1_index, field2_index FROM test_table
+	WHERE field1_index = '1' OR  field2_index = '1'
+
+With union join
+	SELECT field1_index, field2_index
+    		FROM test_table WHERE field1_index = '1'
+	UNION
+		SELECT field1_index, field2_index
+FROM test_table WHERE field2_index = '1';
